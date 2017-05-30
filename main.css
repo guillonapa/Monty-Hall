@@ -1,0 +1,10 @@
+body {
+  padding: 2em;
+  background-color: rgb(186, 232, 246);
+}
+
+.site_title {
+  font-family: Helvetica;
+  font-size: 3em;
+  color: rgb(213, 71, 26);
+}
