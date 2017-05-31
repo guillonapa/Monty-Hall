@@ -1,10 +1,69 @@
 body {
+  font-family: Helvetica;
+  padding: 2em 2em 2em 2em;
+  background-color: #282828;
+}
+
+.copyright_bottom {
+  font-size: 1.4em;
+  color: #F5F5F5;
+}
+
+.description_text {
+  font-size: 1.4em;
+  text-align: justify;
+}
+
+.doors {
+  background-color: #33A1C9;
+  font-size: 2em;
+  text-align: center;
+}
+
+.doors_container {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.door_text {
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.hint {
+  font-size: 1.4em;
+  text-align: center;
   padding: 2em;
-  background-color: rgb(186, 232, 246);
+  color: #F5F5F5;
+}
+
+.info {
+  font-size: 1em;
+  background-color: #36648B;
+  text-align: center;
+  padding: 0.1em 2em 0.1em 2em;
+}
+
+.probability {
+  font-size: 3em;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 0em 0em 1em 0em;
+}
+
+.reset_button {
+  font-size: 1em;
+  background-color: #36648B;
+  text-align: center;
+  padding: 0.1em 2em 0.1em 2em;
 }
 
 .site_title {
-  font-family: Helvetica;
-  font-size: 3em;
-  color: rgb(213, 71, 26);
+  font-size: 4em;
+  text-align: center;
+  color: #F5F5F5;
+}
+
+td {
+  padding: 1em;
 }

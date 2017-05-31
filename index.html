@@ -4,15 +4,41 @@
   <head>
     <!-- CSS file -->
     <link rel='stylesheet' type='text/css' href='main.css'>
-    
+
     <title>The Monty Hall Site</title>
   </head>
   <body>
-    <h1 class='site_title'>The Monty Hall Site!</h1>
+    <h1 class='site_title'>The Monty Hall Game Simulation</h1>
+
+    <div class="info">
+      <h1>INFO</h1>
+      <p class="description_text">Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?<br><br>The answer is YES! You can use this simulator to experiment if changing doors over a large number of trials is a better choice than sticking to the same door.<br><br>Maybe try it 15 times while always switching your initial choice and record the recorded probability. Then, reload the page and try an additional 15 times, but this time you should never switch doors. And compare the recorded probabilities!</p>
+    </div>
+
+    <div class="hint">
+      <p>Click on a door to find the price!</p>
+    </div>
+
+    <table class="doors_container" style="width: 100%" cellspacing="15">
+      <tr>
+        <td class="doors" id="one">Door One</td>
+        <td class="doors" id="two">Door Two</td>
+        <td class="doors" id="three">Door Three</td>
+      </tr>
+    </table>
+
+    <div class="probability">
+      <p>0/0</p>
+    </div>
+    <div class="reset_button">
+      <h1>Reset Doors</h1>
+    </div>
+
+    <p class="copyright_bottom"><br><br>&copy; Guillermo Narvaez (2017)</p>
 
     <!-- Scripts -->
     <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-    <script type="main.js"></script>
+    <script src='main.js'></script>
 
   </body>
 </html>
