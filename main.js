@@ -12,19 +12,33 @@ function main() {
 
   var firstAttempt = true;
 
+  $('.doors').hover(function(){
+    $(this).css("color", "#f5f5f5");
+    }, function(){
+    $(this).css('color', 'rgb(0, 0, 0)');
+  });
+
   //if info button is clicked...
   $('.info').on('click', function() {
     $('.description_text').slideToggle(400);
-  })
+  });
 
   //if reset button is clicked...
   $('.reset_button').on('click', function() {
-    $('.doors').css('background-color', '#33A1C9');
+    $('.doors').css('background-color', '#A9A9A9');
+
     doorsReady = true;
     firstAttempt = true;
     winningDoor = generateWinningDoor();
-    $('.hint').text('');
-  })
+    $('.hint').text('Click on a door to find the price!');
+  });
+
+  //if reset count button is clicked
+  $('.reset_count').on('click', function() {
+    guessedRight = 0;
+    attempts = 0;
+    $('.probability').text(guessedRight + '/' + attempts);
+  });
 
   //other behavior...
   $('.doors').on('click', function() {
@@ -42,7 +56,7 @@ function main() {
           $(this).css('background-color', 'rgb(38, 116, 81)');
         } else {
           $('.probability').text(guessedRight + '/' + attempts + ' = ' + guessedRight/attempts);
-          $(this).css('background-color', 'rgb(182, 39, 39)')
+          $(this).css('background-color', 'rgb(182, 39, 39)');
         }
         doorsReady = false;
       } else if (doorsReady && $(this).attr('id') === 'two') {
@@ -53,7 +67,7 @@ function main() {
           $(this).css('background-color', 'rgb(38, 116, 81)');
         } else {
           $('.probability').text(guessedRight + '/' + attempts + ' = ' + guessedRight/attempts);
-          $(this).css('background-color', 'rgb(182, 39, 39)')
+          $(this).css('background-color', 'rgb(182, 39, 39)');
         }
         doorsReady = false;
       } else if (doorsReady && $(this).attr('id') === 'three') {
@@ -64,13 +78,13 @@ function main() {
           $(this).css('background-color', 'rgb(38, 116, 81)');
         } else {
           $('.probability').text(guessedRight + '/' + attempts + ' = ' + guessedRight/attempts);
-          $(this).css('background-color', 'rgb(182, 39, 39)')
+          $(this).css('background-color', 'rgb(182, 39, 39)');
         }
         doorsReady = false;
       }
     }
 
-  })
+  });
 }
 
 function generateWinningDoor() {
@@ -95,7 +109,7 @@ function giveHint(winningDoor,doorChosen) {
   while(wrongDoor === winningDoor || (wrongDoor === 1 && doorChosen === 'one') || (wrongDoor === 2 && doorChosen === 'two') || (wrongDoor === 3 && doorChosen === 'three')) {
     wrongDoor = Math.floor(Math.random() * 3) + 1;
   }
-  var theText = '\nHere is a HINT! Behind door number ' + wrongDoor + ' there is a GOAT... Do you want to change your pick? Make your decision...';
+  var theText = '\nMonty Hall says: Behind door number ' + wrongDoor + ' there is a GOAT... Do you want to switch doors? Decide!';
   $('.hint').text(theText);
 
 }

@@ -15,14 +15,14 @@ body {
 }
 
 .doors {
-  background-color: #33A1C9;
+  background-color: #A9A9A9;
   font-size: 2em;
   text-align: center;
 }
 
 .doors_container {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 0em;
+  padding-bottom: 1em;
 }
 
 .door_text {
@@ -48,14 +48,18 @@ body {
   font-size: 3em;
   color: #F5F5F5;
   text-align: center;
-  padding: 0em 0em 1em 0em;
 }
 
 .reset_button {
-  font-size: 1em;
+  font-size: 1.6em;
   background-color: #36648B;
   text-align: center;
-  padding: 0.1em 2em 0.1em 2em;
+}
+
+.reset_count {
+  font-size: 1.6em;
+  background-color: #36648B;
+  text-align: center;
 }
 
 .site_title {
@@ -66,4 +70,25 @@ body {
 
 td {
   padding: 1em;
+}
+
+
+
+.info:hover {
+  background-color: #f5f5f5;
+  color: rgb(0, 0, 0);
+}
+
+.reset_count:hover {
+  background-color: #f5f5f5;
+  color: rgb(0, 0, 0);
+}
+
+.reset_button:hover {
+  background-color: #f5f5f5;
+  color: rgb(0, 0, 0);
+}
+
+.bottom_table {
+  border: 1px solid white;
 }

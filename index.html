@@ -12,12 +12,10 @@
 
     <div class="info">
       <h1>INFO</h1>
-      <p class="description_text">Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?<br><br>The answer is YES! You can use this simulator to experiment if changing doors over a large number of trials is a better choice than sticking to the same door.<br><br>Maybe try it 15 times while always switching your initial choice and record the recorded probability. Then, reload the page and try an additional 15 times, but this time you should never switch doors. And compare the recorded probabilities!</p>
+      <p class="description_text"><i>Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?</i><br><br>The answer is YES! You can use this simulator to experiment if changing doors over a large number of trials is a better choice than sticking to the same door.<br><br>Maybe try it 15 times while always switching your initial choice and record the recorded probability. Then, reload the page and try an additional 15 times, but this time you should never switch doors. And compare the recorded probabilities!</p>
     </div>
 
-    <div class="hint">
-      <p>Click on a door to find the price!</p>
-    </div>
+    <p class="hint">Click on a door to find the price!</p>
 
     <table class="doors_container" style="width: 100%" cellspacing="15">
       <tr>
@@ -27,12 +25,20 @@
       </tr>
     </table>
 
-    <div class="probability">
+    <!-- <div class="probability">
       <p>0/0</p>
     </div>
     <div class="reset_button">
       <h1>Reset Doors</h1>
-    </div>
+    </div> -->
+
+    <table class="bottom_table" style="width: 100%" cellspacing="15" border="10">
+      <tr>
+        <td class="probability" style="width: 66%">0/0</td>
+        <td class="reset_count">Reset Count</td>
+        <td class="reset_button">Reset Doors</td>
+      </tr>
+    </table>
 
     <p class="copyright_bottom"><br><br>&copy; Guillermo Narvaez (2017)</p>
 
