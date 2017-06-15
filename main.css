@@ -1,11 +1,11 @@
 body {
-  font-family: Helvetica;
+  font-family: 'Roboto Slab', serif;
   padding: 2em 2em 2em 2em;
-  background-color: #282828;
+  background-color: #055A5B;
 }
 
 .bottom_table {
-  border: 1px solid white;
+  border: 0px solid white;
 }
 
 .copyright_bottom {
@@ -19,7 +19,7 @@ body {
 }
 
 .doors {
-  background-color: #A9A9A9;
+  background-color: #B6CAC0;
   font-size: 2em;
   text-align: center;
 }
@@ -27,6 +27,7 @@ body {
 .doors_container {
   padding-top: 0em;
   padding-bottom: 1em;
+  height: 15em;
 }
 
 .door_text {
@@ -43,7 +44,7 @@ body {
 
 .info {
   font-size: 1em;
-  background-color: #36648B;
+  background-color: #E54B4B;
   text-align: center;
   padding: 0.1em 2em 0.1em 2em;
 }
@@ -54,14 +55,27 @@ body {
 }
 
 .probability {
+  font-size: 1.6em;
+  color: black;
+  text-align: center;
+  background-color: #FACAC0;
+}
+
+.probability_arrow {
   font-size: 3em;
   color: #F5F5F5;
+}
+
+.probability_text {
+  font-size: 1.6em;
+  color: black;
   text-align: center;
+  background-color: #FACAC0;
 }
 
 .reset_button {
   font-size: 1.6em;
-  background-color: #36648B;
+  background-color: #E54B4B;
   text-align: center;
 }
 
@@ -72,7 +86,7 @@ body {
 
 .reset_count {
   font-size: 1.6em;
-  background-color: #36648B;
+  background-color: #E54B4B;
   text-align: center;
 }
 

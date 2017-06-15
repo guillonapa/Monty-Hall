@@ -25,7 +25,7 @@ function main() {
 
   //if reset button is clicked...
   $('.reset_button').on('click', function() {
-    $('.doors').css('background-color', '#A9A9A9');
+    $('.doors').css('background-color', '#B6CAC0');
 
     doorsReady = true;
     firstAttempt = true;
@@ -52,10 +52,10 @@ function main() {
         attempts++;
         if (openDoor('one',winningDoor)) {
           guessedRight++;
-          $('.probability').text(guessedRight + '/' + attempts + ' = ' + guessedRight/attempts);
+          $('.probability').text(guessedRight + '/' + attempts + ' = ' + (guessedRight/attempts).toFixed(3));
           $(this).css('background-color', 'rgb(38, 116, 81)');
         } else {
-          $('.probability').text(guessedRight + '/' + attempts + ' = ' + guessedRight/attempts);
+          $('.probability').text(guessedRight + '/' + attempts + ' = ' + (guessedRight/attempts).toFixed(3));
           $(this).css('background-color', 'rgb(182, 39, 39)');
         }
         doorsReady = false;
@@ -63,10 +63,10 @@ function main() {
         attempts++;
         if (openDoor('two',winningDoor)) {
           guessedRight++;
-          $('.probability').text(guessedRight + '/' + attempts + ' = ' + guessedRight/attempts);
+          $('.probability').text(guessedRight + '/' + attempts + ' = ' + (guessedRight/attempts).toFixed(3));
           $(this).css('background-color', 'rgb(38, 116, 81)');
         } else {
-          $('.probability').text(guessedRight + '/' + attempts + ' = ' + guessedRight/attempts);
+          $('.probability').text(guessedRight + '/' + attempts + ' = ' + (guessedRight/attempts).toFixed(3));
           $(this).css('background-color', 'rgb(182, 39, 39)');
         }
         doorsReady = false;
@@ -74,10 +74,10 @@ function main() {
         attempts++;
         if (openDoor('three',winningDoor)) {
           guessedRight++;
-          $('.probability').text(guessedRight + '/' + attempts + ' = ' + guessedRight/attempts);
+          $('.probability').text(guessedRight + '/' + attempts + ' = ' + (guessedRight/attempts).toFixed(3));
           $(this).css('background-color', 'rgb(38, 116, 81)');
         } else {
-          $('.probability').text(guessedRight + '/' + attempts + ' = ' + guessedRight/attempts);
+          $('.probability').text(guessedRight + '/' + attempts + ' = ' + (guessedRight/attempts).toFixed(3));
           $(this).css('background-color', 'rgb(182, 39, 39)');
         }
         doorsReady = false;
