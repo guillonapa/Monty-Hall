@@ -1,8 +1,8 @@
 function main() {
-  $('.site_title').hide();
-  $('.doors').hide();
-  $('.site_title').fadeIn(2000);
-  $('.doors').fadeIn(2000);
+  // $('.site_title').hide();
+  // $('.doors').hide();
+  // $('.site_title').fadeIn(2000);
+  // $('.doors').fadeIn(2000);
   $('.description_text').hide();
 
   var doorsReady = true;

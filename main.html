@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <!-- CSS file -->
+    <link rel='stylesheet' type='text/css' href='main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <title>The Monty Hall Site</title>
+  </head>
+  <body>
+    <h1 class='site_title'><a class="link_title" href="home.html">The Monty Hall Problem Simulation</a></h1>
+
+    <div class="info">
+      <h1>INFO</h1>
+      <p class="description_text">Remember... you can make a first pick and Monty Hall will give you a very useful hint -- he will tell you behind which door there is a goat. After you are given this information you can decide if you want to definitely open the door you originally picked or if you want to open a different door. Careful... there is only one brand new car behind one of the doors.If I was you I would always switch doors when offered.<br> <br>To go back to the instructions page and read a more detailed explanation go <a class="link_info" href="instructions.html">here</a>.</p>
+    </div>
+
+    <p class="hint">Click on a door to find the price!</p>
+
+    <table class="doors_container" style="width: 100%" cellspacing="15">
+      <tr>
+        <td class="doors" id="one">Door One</td>
+        <td class="doors" id="two">Door Two</td>
+        <td class="doors" id="three">Door Three</td>
+      </tr>
+    </table>
+
+    <!-- <div class="probability">
+      <p>0/0</p>
+    </div>
+    <div class="reset_button">
+      <h1>Reset Doors</h1>
+    </div> -->
+
+    <table class="bottom_table" style="width: 100%" cellspacing="15" >
+      <tr>
+        <td class="probability_text" style="width: 32.5%">Current Probability &#8594;</td>
+        <!-- <td class="probability_arrow" style="width: 6%"></td> -->
+        <td class="probability" style="width: 32.5%">0/0</td>
+        <td class="reset_count">Reset Game</td>
+        <td class="reset_button">Try Again</td>
+      </tr>
+    </table>
+
+    <p class="copyright_bottom"><br><br>&copy; Guillermo Narvaez 2017</p>
+
+    <!-- Scripts -->
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src='main.js'></script>
+
+  </body>
+</html>

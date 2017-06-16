@@ -1,3 +1,16 @@
+a:link {
+  color: #F5F5F5;
+}
+
+a:visited {
+  color: #F5F5F5;
+}
+
+a:hover {
+  color: #BDC3C7;
+}
+
+
 body {
   font-family: 'Roboto Slab', serif;
   padding: 2em 2em 2em 2em;
@@ -42,6 +55,18 @@ body {
   color: #F5F5F5;
 }
 
+.home_text {
+  padding-right: 5em;
+  color: #F5F5F5;
+  font-size: 2em;
+}
+
+.home_screen_title {
+  padding-right: 4em;
+  font-size: 6em;
+  color: #F5F5F5;
+}
+
 .info {
   font-size: 1em;
   background-color: #E54B4B;
@@ -52,6 +77,36 @@ body {
 .info:hover {
   background-color: #f5f5f5;
   color: rgb(0, 0, 0);
+}
+
+.instructions_game {
+  color: #F5F5F5;
+  font-size: 1em;
+  padding-right: 25em;
+}
+
+.link_info:link {
+  color: black;
+}
+
+.link_info:visited {
+  color: black;
+}
+
+.link_info:hover {
+  color: #BDC3C7;
+}
+
+.link_title:link {
+  text-decoration: none;
+}
+
+.link_title:visited {
+  text-decoration: none;
+}
+
+.link_title:hover {
+  text-decoration: none;
 }
 
 .probability {
