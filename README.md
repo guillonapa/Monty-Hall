@@ -4,7 +4,7 @@ This is a small one-day project whose purpose was to practice some HTML, CSS, an
 
 ## Access
 
-The application is hosted in Heroku. You can check it out here [I'm an inline-style link](https://fierce-garden-61327.herokuapp.com/).
+The application is hosted in Heroku. You can check it out [here](https://fierce-garden-61327.herokuapp.com/).
 
 ### Purpose of the Site
 
